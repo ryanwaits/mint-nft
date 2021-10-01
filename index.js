@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { ethers } = require("ethers");
 
 const ABI = require("./ABI.json");
@@ -8,7 +9,7 @@ const ADDRESS = "0xfcB1315C4273954F74Cb16D5b663DBF479EEC62e";
 const GAS_LIMIT = 2000000;
 const GAS_PRICE = ethers.utils.parseUnits("666", "gwei");
 // make sure more than 1 can actually be minted by a single address
-const MAX_AMOUNT = 5;
+const MAX_AMOUNT = 3;
 // change this to represent the minting price
 const TOKEN_PRICE = ethers.utils.parseEther("0.08");
 const INTERVAL = 500;

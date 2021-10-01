@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ethers": "^5.4.7"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
