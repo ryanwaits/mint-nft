@@ -27,11 +27,10 @@ async function main() {
     if (saleIsActive) {
       clearInterval(timer);
       console.log("LFG");
-      contract.mintCupCat(MAX_AMOUNT, {
+      contract.mintCapsule(TOKEN_PRICE, MAX_AMOUNT, {
         gasLimit: GAS_LIMIT,
         gasPrice: GAS_PRICE,
         nonce: startingNonce,
-        value: TOKEN_PRICE.mul(MAX_AMOUNT),
       });
     }
   } catch (error) {
